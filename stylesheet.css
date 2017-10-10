@@ -1,0 +1,464 @@
+/* Introducing Fonts */
+@font-face {
+    font-family: 'playfair_displayblack';
+    src: url('playfairdisplay-black-webfont.woff2') format('woff2'),
+         url('playfairdisplay-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'playfair_displayitalic';
+    src: url('playfairdisplay-italic-webfont.woff2') format('woff2'),
+         url('playfairdisplay-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'playfair_displayregular';
+    src: url('playfairdisplay-regular-webfont.woff2') format('woff2'),
+         url('playfairdisplay-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'railwayregular';
+    src: url('railway-webfont.woff2') format('woff2'),
+         url('railway-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('raleway-light-webfont.woff2') format('woff2'),
+         url('raleway-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Header Section Start */
+/* Header Placement */
+header {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-family: 'railwayregular';
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Logo Image */
+#logo {
+  width:8%;
+  min-width: 5em;
+  height: 2em;
+  padding: .5em;
+  order: -1;
+}
+
+/* Cart Icon */
+#cart {
+  width:5%;
+  height: 4em;
+  min-width: 2.5em;
+  float:right;
+  order: 2;
+}
+
+/*Order of Nav Bar*/
+nav {
+  order: 1;
+}
+
+/* Styling links for nav-bar only */
+a.nav-bar {
+  text-decoration: none;
+  color: #e2574c;
+  font-family: 'railwayregular';
+  text-align: center;
+}
+
+/* Styling list items within nav */
+li {
+  display:inline-block;
+  padding:inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Hover color for links */
+a:hover {
+  color: #b64036;
+}
+/* Header Section End */
+
+
+/* Hero Banner Section Start */
+/* Setting background images for Hero Banner */
+#hero {
+  background-position-x: center;
+  background-image: url(banner-girl.png), url(flower-bkgd.jpg);
+  background-repeat: no-repeat;
+  height: 50em;
+  min-width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Styling the heading (Spring/Summer 2016) within Hero Banner */
+h1 {
+  font-size: 5em;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  font-family: 'playfair_displayregular';
+  height: 2em;
+  width: 100%;
+  margin: 0;
+}
+
+/* Styling the heading (New Collection) within Hero Banner */
+h3 {
+  text-align: center;
+  font-size: xx-large;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family:  'railwayregular';
+  height: 2em;
+  width: 100%;
+  margin: 0;
+}
+/* Hero Banner Section End */
+
+
+/* Article Section Start */
+/* Adjusting font for Hand-Crafted Styles header */
+.styles {
+  text-align: center;
+  font-size: xx-large;
+  font-family: 'playfair_displayregular';
+}
+
+/* Stlying font for paragraph within article */
+p#text {
+  font-family: 'ralewaylight';
+  color: #969696;
+}
+
+/* Content placement within Article (Hand-Crafted Styles)*/
+article {
+  padding-top: 5em;
+  min-height: 15em;
+  text-align: center;
+}
+/* Article Section End */
+
+
+/* Categories Section Start */
+/* Placement of Category Images */
+.categories {
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff
+}
+
+/* Placement & backgroud image for Men's Category */
+.mens {
+  background-image: url("mens-category.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 50%;
+  height: 244px;
+  text-transform: uppercase;
+  font-size: larger;
+  line-height: 244px;
+}
+
+/* Placement & backgroud image for Trends Category */
+.trends {
+  background-image: url("trends-category.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 24%;
+  height: 244px;
+  text-transform: uppercase;
+  font-size: larger;
+  line-height: 244px;
+}
+
+/* Placement & backgroud image for Glasses Category */
+.glasses {
+  background-image: url("glasses-category.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 24%;
+  height: 244px;
+  text-transform: uppercase;
+  font-size: larger;
+  line-height: 244px;
+}
+
+/* Placement & backgroud image for Sale Category */
+.sale {
+  background-image: url("sale-category.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 24%;
+  height: 244px;
+  text-transform: uppercase;
+  font-size: larger;
+  line-height: 244px;
+}
+
+/* Placement & backgroud image for Bags Category */
+.bags {
+  background-image: url("bags-category.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 24%;
+  height: 244px;
+  text-transform: uppercase;
+  font-size: larger;
+  line-height: 244px;
+}
+
+/* Placement & backgroud image for Women's Category */
+.womens {
+  background-image: url("womens-category.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 50%;
+  height: 244px;
+  text-transform: uppercase;
+  font-size: larger;
+  line-height: 244px;
+}
+
+/* Styling the headings for each category */
+h2.categories {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family:  'ralewaylight';
+  color: #ffffff;
+}
+/* Categories Section Start */
+
+
+/* Products Section Start */
+/* Adjusting font for Products Header */
+.head {
+  text-align: center;
+  font-size: xx-large;
+  padding-top: 1em;
+  font-family: 'playfair_displayregular';
+}
+
+/* Styling the headings for each product name */
+h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e2574c;
+  font-family: 'playfair_displayregular';
+}
+
+/* Applying flexbox to products section */
+.products {
+  display: flex;
+}
+
+/* Styling the Checked Dress within products section */
+.dresses {
+  color: #969696;
+  text-align: center;
+  width: 25%;
+  padding-bottom: 2em;
+}
+
+/* Styling the Backpack within products section */
+.backpack {
+  color: #969696;
+  text-align: center;
+  width: 25%;
+}
+
+/* Styling the Overalls within products section */
+.denim {
+  color: #969696;
+  text-align: center;
+  width: 25%;
+}
+
+/* Styling the Pink Dress within products section */
+.pink-dress {
+  color: #969696;
+  text-align: center;
+  width: 25%;
+}
+/* Products Section End */
+
+
+/* Sign Up Form Section Start */
+/* Setting background image and adjusting content */
+.sign-up {
+  min-height: 200px;
+  background-image: url(wave-bkgd.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  min-width: 100%;
+  color: #ffffff;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: .5em;
+}
+
+/* Adjusting paragraph font within Sign up */
+p#paragraph {
+  font-family: 'ralewaylight';
+  text-align: center;
+  line-height: 2;
+  padding-bottom: 2em;
+}
+
+/* Adjusting font for Sign up header */
+.updates {
+  font-size: xx-large;
+  font-family: 'playfair_displayregular';
+}
+
+/* Styling the Email Input */
+#email {
+  min-width: 330px;
+  min-height: 40px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+  border: none;
+  font-size: inherit;
+  padding-left: 1em;
+}
+
+/* Styling the Submit Button */
+.button1 {
+  background-color: #b64036;
+  border-radius: 50px;
+  margin-left: 12em;
+  min-height: 38px;
+  min-width: 150px;
+  border: none;
+  position: relative;
+  bottom: 40px;
+  color: #ffffff;
+  font-size: inherit;
+}
+
+/* Adjusting placeholder text for input */
+input {
+  color: #969696;
+  font-family: 'ralewaylight';
+}
+
+/* Stlying the form */
+form {
+  min-width: 100%;
+  color: #ffffff;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+/* Sign up Form section End */
+
+
+/* Footer Section Start */
+/* General styling of footer */
+footer {
+  font-family: 'railwaylight';
+  background-color: #242424;
+  color: #ffffff;
+  display: flex;
+  padding-left: 25px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  padding-right: 25px;
+  justify-content: space-between;
+}
+
+/* Adjusting copyright font */
+.copyright {
+  font-family: 'playfair_displayregular';
+}
+
+/* Adjusting links for social media icons */
+a#social {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'ralewaylight';
+}
+
+/* Adjusting Social Media icons */
+.fa-facebook {
+  background: #242424;
+  color: white;
+}
+.fa-twitter {
+  background: #242424;
+  color: white;
+}
+.fa-instagram {
+  background: #242424;
+  color: white;
+}
+.fa-pinterest {
+  background: #242424;
+  color: white;
+}
+.fa-google {
+  background: #242424;
+  color: white;
+}
+
+/* Adjusting address font */
+.address {
+  color: #969696;
+}
+/* Footer section end */
+
+
+/* Media queries start */
+/* Changing font size for mobile */
+@media only screen and (max-width: 600px) {
+    main {
+        font-size: 14px;
+    }
+}
+
+/* Adjusting footer placement for mobile */
+@media only screen and (max-width: 600px) {
+    footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+/* Media Queries End */
