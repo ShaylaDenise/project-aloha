@@ -7,6 +7,7 @@
   <meta name="keywords" content="Fashion, Women's Clothing, 2016 Trends">
   <meta name="author" content="Shayla Landriault">
   <link rel='stylesheet' type="text/css" href ="stylesheet.css">
+  <link rel='stylesheet' type="text/css" href ="reset.css">
   <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -26,10 +27,10 @@
     <section id=hero>
       <br>
       <br>
-      <h3>New Collection</h3><br><h1>Spring/Summer 2016</h1>
+      <p id="collection">New Collection</p><br><p id="summer">Spring/Summer 2016</p>
     </section>
     <article>
-      <p class="styles"><em>Hand-Crafted</em> <strong>Styles</strong></p>
+      <p id="crafted">Hand-Crafted</p>       <p id="style">Styles</p>
       <p id="text">Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our <br> current selection of products or sign-up for updates</p>
     </article>
     <section class="categories">
@@ -52,7 +53,9 @@
         <h2 class="categories">Women's</h2>
       </div>
     </section>
-    <p class="head"><em>Most-Loved  </em><strong>  Products</strong></p>
+    <div class="products">
+      <p id="head">Most-Loved  </p><p id="product">  Products</p>
+    </div>
     <section class="products">
         <div class="dresses">
           <img src="checked-stretch-dress.jpg" alt="Red Checked Stretch Dress">
@@ -81,7 +84,7 @@
     </section>
     <section>
       <div class="sign-up">
-      <p class="updates"><em>Sign-up</em> <strong>for Updates</strong></p>
+      <p id="sign">Sign-Up for</p>        <p id="update"> Updates</p>
       <p id="paragraph">Stay updated on our latest product releases, be first to find out about <br> upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
       <form class="subscribe">
           <input type="text" id="email" placeholder="Your Email">
@@ -94,7 +97,11 @@
     <div class="copyright">
       <p>&copy 2016 Aloha Apparel Co. <br>
         Powered by HTML and CSS.</p>
+        <br>
+        <br>
       <p>604-604-6040. info@alohaapparel.com</p>
+      <br>
+      <br>
       <span class="address">
         <p>1490 W Broadway <br>
         Vancouver, BC, Canada</p>
