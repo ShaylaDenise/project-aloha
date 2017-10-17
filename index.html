@@ -8,32 +8,44 @@
   <meta name="author" content="Shayla Landriault">
   <link rel='stylesheet' type="text/css" href ="stylesheet.css">
   <link rel='stylesheet' type="text/css" href ="reset.css">
+  <!-- jQuery library (served from Google) -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- bxSlider Javascript file -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+  <!-- bxSlider CSS file -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.css" rel="stylesheet" />
   <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <header>
-    <img id="logo" src="aloha-logo.svg" alt="Aloha Apparel Co.">
-    <img id="cart" src="cart-icon.svg" alt="Cart Icon">
+    <div id=logo-area>
+      <img id="logo" src="aloha-logo.svg" alt="Aloha Apparel Co.">
+      <img id="cart" src="cart-icon.svg" alt="Cart Icon">
+    </div>
+    <hr>
+    <div id="header">
     <nav>
       <ul class="nav-bar">
-        <li><a class="nav-bar" href="index.html">About</a></li>
-        <li><a class="nav-bar" href="index.html">Shop</a></li>
-        <li><a class="nav-bar" href="index.html">Featured</a></li>
-        <li><a class="nav-bar" href="index.html">Updates</a></li>
+        <li class="nav-bar"><a class="nav-bar" href="#about">About</a></li>
+        <li class="nav-bar"><a class="nav-bar" href="#categories">Shop</a></li>
+        <li class="nav-bar"><a class="nav-bar" href="#products">Featured</a></li>
+        <li class="nav-bar"><a class="nav-bar" href="#sign-up">Updates</a></li>
       </ul>
     </nav>
+  </div>
   </header>
   <main>
     <section id=hero>
       <br>
       <br>
-      <p id="collection">New Collection</p><br><p id="summer">Spring/Summer 2016</p>
+      <p id="collection">New Collection</p><br><p id="summer">Spring/Summer</p><br class="rwd-break"><p id="season">2016</p>
     </section>
-    <article>
+    <article id="about">
       <p id="crafted">Hand-Crafted</p>       <p id="style">Styles</p>
       <p id="text">Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our <br> current selection of products or sign-up for updates</p>
     </article>
-    <section class="categories">
+    <section id="categories">
       <div class="mens">
         <h2 class="categories">Men's</h2>
       </div>
@@ -53,72 +65,114 @@
         <h2 class="categories">Women's</h2>
       </div>
     </section>
-    <div class="products">
+    <div id="products">
       <p id="head">Most-Loved  </p><p id="product">  Products</p>
     </div>
     <section class="products">
-        <div class="dresses">
-          <img src="checked-stretch-dress.jpg" alt="Red Checked Stretch Dress">
-          <p>Dresses</p>
-          <h2>Checked Stretch Dress</h2>
-          <p>$129.00</p>
-        </div>
-        <div class="backpack">
-          <img src="blue-hipster-backpack.jpg" alt="Blue Hipster Backpack">
-          <p>Bags</p>
-          <h2>Blue Hipster Backpack</h2>
-          <p>$69.00</p>
-        </div>
-        <div class="denim">
-          <img src="demin-overall-shorts.jpg" alt="Denim Overall Shorts">
-          <p>Denim</p>
-          <h2>Denim Overall Shorts</h2>
-          <p>$89.00</p>
-        </div>
-        <div class="pink-dress">
-          <img src="pink-dotted-dress.jpg" alt="Pink Dotted Dress">
-          <p>Dresses</p>
-          <h2>Pink Dotted Dress</h2>
-          <p>$99.00</p>
-        </div>
+      <ul class="bxslider">
+          <li><img src="checked-stretch-dress.jpg" alt="Red Checked Stretch Dress">
+          <h6>Dresses</h6>
+          <h2 class="transform-text">Checked Stretch Dress</h2>
+          <h6>$129.00</h6>
+          <div class="addCartButton">
+            <button class="addCart">Add to Cart</button>
+          </div>
+        </li>
+          <li><img src="blue-hipster-backpack.jpg" alt="Blue Hipster Backpack">
+          <h6>Bags</h6>
+          <h2 class="transform-text">Blue Hipster Backpack</h2>
+          <h6>$69.00</h6>
+          <div class="addCartButton">
+            <button class="addCart">Add to Cart</button>
+          </div>
+        </li>
+          <li><img src="demin-overall-shorts.jpg" alt="Denim Overall Shorts">
+          <h6>Denim</h6>
+          <h2 class="transform-text">Denim Overall Shorts</h2>
+          <h6>$89.00</h6>
+          <div class="addCartButton">
+            <button class="addCart">Add to Cart</button>
+          </div>
+        </li>
+          <li><img src="pink-dotted-dress.jpg" alt="Pink Dotted Dress">
+          <h6>Dresses</h6>
+          <h2 class="transform-text">Pink Dotted Dress</h2>
+          <h6>$99.00</h6>
+          <div class="addCartButton">
+            <button class="addCart">Add to Cart</button>
+          </div>
+          </li>
+          <li><img src="blue-silk-dress.jpg" alt="Blue Silk Dress with Belt">
+            <h6>Dresses</h6>
+            <h2 class="transform-text">Blue Silk Dress</h2>
+            <h6>$129.00</h6>
+          <div class="addCartButton">
+            <button class="addCart">Add to Cart</button>
+          </div>
+        </li>
+        <li><img src="cotton-blue-shirt.jpg" alt="Cotton Blue Denim T-Shirt">
+          <h6>Men's</h6>
+          <h2 class="transform-text">Cotton Blue Shirt</h2>
+          <h6>$79.00</h6>
+          <div class="addCartButton">
+            <button class="addCart">Add to Cart</button>
+          </div>
+        </li>
+        <li><img src="cotton-yellow-tshirt.jpg" alt="Cotton Yellow T-Shirt">
+          <h6>Men's</h6>
+          <h2 class="transform-text">Cotton Yellow Shirt</h2>
+          <h6>$49.00</h6>
+          <div class="addCartButton">
+            <button class="addCart">Add to Cart</button>
+          </div>
+        </li>
+        <li><img src="stretch-knit-dress.jpg" alt="Stretch Polka Dot Knit Dress">
+          <h6>Dresses</h6>
+          <h2 class="transform-text">Stretch Knit Dress</h2>
+          <h6>$129.00</h6>
+          <div class="addCartButton">
+            <button class="addCart">Add to Cart</button>
+          </div>
+        </li>
+      </ul>
     </section>
     <section>
-      <div class="sign-up">
+      <div id="sign-up">
       <p id="sign">Sign-Up for</p>        <p id="update"> Updates</p>
       <p id="paragraph">Stay updated on our latest product releases, be first to find out about <br> upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
-      <form class="subscribe">
-          <input type="text" id="email" placeholder="Your Email">
+      <form class="subscriptionForm">
+          <input type="email" id="email" placeholder="Your Email">
           <button type="submit" class="button1">Subscribe</button>
       </form>
     </section>
   </main>
+  <script src="script.js"></script>
 </body>
 <footer>
-    <div class="copyright">
-      <p>&copy 2016 Aloha Apparel Co. <br>
-        Powered by HTML and CSS.</p>
-        <br>
-        <br>
-      <p>604-604-6040. info@alohaapparel.com</p>
+  <div class="copyright">
+    <div class="site-info">
+      <p id="copy">&copy 2016 Aloha Apparel Co. <br>
+      Powered by HTML and CSS.</p>
       <br>
+      <p id="contact-info">604-604-6040. info@alohaapparel.com</p>
       <br>
       <span class="address">
-        <p>1490 W Broadway <br>
-        Vancouver, BC, Canada</p>
-      </span>
+      <p>1490 W Broadway <br>
+      Vancouver, BC, Canada</p>
     </div>
-    <div class="social-media">
-      <ul id="social">
-        <a id="social" href="index.html"><li><i class="fa fa-facebook"></i></li> Facebook</a>
+  </span>
+  <div class="icons">
+      <ul class="icon-font">
+        <li class="hide"><a class="social" href="index.html"><p id="facebook">Facebook</p></a></li>
         <br><br>
-        <a id="social" href="index.html"><li><i class="fa fa-twitter"></i></li> Twitter</a>
+        <li><a class="social" href="index.html"><p id="twitter">Twitter</p></a></li>
         <br><br>
-        <a id="social" href="index.html"><li><i class="fa fa-instagram"></i></li> Instagram</a>
+        <li><a class="social" href="index.html"><p id="instagram">Instagram</p></a></li>
         <br><br>
-        <a id="social" href="index.html"><li><i class="fa fa-pinterest"></i></li> Pinterest</a>
+        <li><a class="social" href="index.html"><p id="pinterest">Pinterest</p></a></li>
         <br><br>
-        <a id="social" href="index.html"><li><i class="fa fa-google"></i></li> Google+</a>
+        <li><a class="social" href="index.html"><p id="google-plus">Google+</p></a></li>
     </ul>
-    </div>
+  </div>
 </footer>
 </html>
